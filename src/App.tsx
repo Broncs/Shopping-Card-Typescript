@@ -66,6 +66,10 @@ const App = () => {
     );
   };
 
+  const closeModal = () => {
+    setCartOpen(false);
+  };
+
   if (isLoading) return <LinearProgress />;
   if (error) return <div>Something went wrong ...</div>;
 
@@ -76,6 +80,7 @@ const App = () => {
           cartItems={cartItems}
           addToCart={handleAddToCart}
           removeFromCart={handleRemoveFromCart}
+          closeModal={closeModal}
         />
       </Drawer>
       <StyledButton onClick={() => setCartOpen(true)}>
