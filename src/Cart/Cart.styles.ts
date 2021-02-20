@@ -11,5 +11,6 @@ export const Wrapper = styled.aside`
     position: absolute;
     right: 20px;
     top: 20px;
+    cursor: pointer;
   }
 `;

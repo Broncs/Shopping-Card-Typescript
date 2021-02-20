@@ -24,8 +24,8 @@ const Cart: React.FC<Props> = ({
   return (
     <Wrapper>
       <CloseIcon className="close-btn" onClick={closeModal} />
-      <h2>Seu Carrinho de Compras</h2>
-      {cartItems.length === 0 ? <p>Nenhum item no carrinho.</p> : null}
+      <h2>Your Shopping Cart</h2>
+      {cartItems.length === 0 ? <p>No Items on the Cart.</p> : null}
       {cartItems.map((item) => (
         <CartItem
           key={item.id}
